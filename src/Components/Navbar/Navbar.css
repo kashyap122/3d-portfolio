@@ -1,0 +1,92 @@
+.name-container-main {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Teko";
+}
+
+.name-container {
+  font-family: "Teko";
+  display: flex;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.name-letter {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.name-letter:hover {
+  animation: bounce 0.3s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  background: transparent;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+.links img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: regardsregular;
+    src: url(../../../public/Regards.woff);
+}
+
+.section-work{
+    height:100vh;
+    scroll-snap-align:center;
+    justify-content: center;
+    text-align: center;
+    font-family: Teko;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.project{
+    font-size: 24px;
+}
+.Title-card{
+    font-size: 32px;
+}
+

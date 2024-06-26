@@ -1,0 +1,98 @@
+@font-face {
+    font-family: regardsregular;
+    src: url(../../../public/Regards.woff);
+}
+.section-about-me{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.right-about-me {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    width: 30%;
+}
+.left-up{
+    margin: 52px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    height: 4px;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.paragraph-about-me{
+    font-size: larger;
+    font-family: Nunito;
+    text-align: left;
+    
+}
+.title-about-me{
+    color: lightgrey;
+    font-size: 60px;
+    font-family: regardsregular;
+}
+.left-down{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-about-me{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-about-me-item {
+    font-size: 50px;
+    font-family: regardsregular;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    position: relative;
+  }
+  
+  .list-about-me-item::after {
+    content: "Full Stack Web Developer";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7d2ae8;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap; /* Ensure the text stays on one line */
+    transition: width 0.5s linear; /* Smooth transition */
+  }
+  
+  .list-about-me-item:hover::after {
+    width: 100%; /* Expand to full width on hover */
+  }
+  
+  @keyframes moveText {
+    to {
+      width: 100%;
+    }
+  }
+  
+.left-about-me {
+    flex: 2;
+  }
+  

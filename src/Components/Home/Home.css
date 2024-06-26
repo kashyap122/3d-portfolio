@@ -1,0 +1,73 @@
+@font-face {
+    font-family: regardsregular;
+    src: url(../../../public/Regards.woff);
+}
+.section {
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 92%;
+    height: 1000vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title-home {
+    color: lightgrey;
+    font-size: 60px;
+    font-family: regardsregular;
+}
+
+.what-we-do {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    gap: 10px;
+    font-family:regardsregular;
+}
+
+.what-we-do img{
+    height: 5px;
+    width: 100%px;
+}
+
+.subtitle {
+    color: #7d2ae8;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    color: lightgrey;
+}
+
+.right {
+    flex: 2;
+}
+
+.button-learn-more {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    width: 150px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+}
