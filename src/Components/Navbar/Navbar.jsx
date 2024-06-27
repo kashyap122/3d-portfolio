@@ -8,60 +8,77 @@ const Navbar = () => {
   const aboutMe = "About Me";
   const work = "My Projects";
   const contactMe = "Contact Me";
-
+  const cv = "Resume/CV";
+  
   return (
-    <div className="section">
-      <div className="navbar">
-        <div className="links">
-          <div className="list">
-            <div className=""></div>
-            <div className="listitems ">
-              <div className="name-container-main">
-                {name.split("").map((letter, index) => (
-                  <span key={index} className="name-letter">
-                    {letter === " " ? "\u00A0" : letter}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="listitems ">
-              <div className="name-container">
-                {home.split("").map((letter, index) => (
-                  <span key={index} className="name-letter">
-                    {letter === " " ? "\u00A0" : letter}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="listitems ">
-              <div className="name-container">
-                {aboutMe.split("").map((letter, index) => (
-                  <span key={index} className="name-letter">
-                    {letter === " " ? "\u00A0" : letter}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="listitems ">
-              <div className="name-container">
-                {work.split("").map((letter, index) => (
-                  <span key={index} className="name-letter">
-                    {letter === " " ? "\u00A0" : letter}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="listitems ">
-              <div className="name-container">
-                {contactMe.split("").map((letter, index) => (
-                  <span key={index} className="name-letter">
-                    {letter === " " ? "\u00A0" : letter}
-                  </span>
-                ))}
-              </div>
+    <div className="section-navbar">
+      <div className="navbar row">
+        <a href="/" className="col-md-2 link">
+          <div className="listitems">
+            <div className="name-container-main">
+              {name.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
             </div>
           </div>
-        </div>
+        </a>
+        <a href="/" className="col-md-2 link">
+          <div className="listitems">
+            <div className="name-container">
+              {home.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+        <a href="#aboutMe" className="col-md-2 link">
+          <div className="listitems">
+            <div className="name-container">
+              {aboutMe.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+        <a href="#work" className="col-md-2 link">
+          <div className="listitems">
+            <div className="name-container">
+              {work.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+        <a href="#contactUs" className="col-md-2 link">
+          <div className="listitems">
+            <div className="name-container">
+              {contactMe.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+        <a href="/Resume.pdf" target="_blank" className="col-md-2 link" >
+          <div className="listitems">
+            <div className="name-container">
+              {cv.split("").map((letter, index) => (
+                <span key={index} className="name-letter">
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   );

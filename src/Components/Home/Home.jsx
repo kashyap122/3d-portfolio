@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const Home = () => {
   return (
-    <div className="section">
+    <div className="section" id="home">
       <Navbar />
       <div className="hero row">
         <div className="left col-md-6">

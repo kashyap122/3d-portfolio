@@ -40,9 +40,9 @@ hr{
 }
 .paragraph-about-me{
     font-size: larger;
-    font-family: Nunito;
-    text-align: left;
-    
+    font-family: Teko;
+    font-size: 28px;
+    text-align: left;    
 }
 .title-about-me{
     color: lightgrey;

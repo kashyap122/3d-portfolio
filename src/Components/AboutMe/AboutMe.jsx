@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const AboutMe = () => {
   return (
-    <div className="section-about-me">
+    <div className="section-about-me" id="aboutMe">
       <div className="about-me">
         <div className="col-md-6 left-about-me">
       <WebDevObj />
